@@ -1,0 +1,6 @@
+[submodule "default/zsh/ohmyzsh"]
+	path = default/zsh/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "default/zsh/plugins/zsh-autosuggestions"]
+	path = default/zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
