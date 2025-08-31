@@ -1,0 +1,35 @@
+# File System
+alias ls='eza -lh --group-directories-first --icons=auto'
+alias lsa='ls -a'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+
+alias grep='grep --color=auto'
+
+alias md='mkdir -p' 
+alias rd='rm -rf'
+
+if command -v zoxide &> /dev/null; then
+  alias cd='z'
+fi
+
+# Shell
+alias q='exit'
+alias c='clear'
+alias r='source ~/.zshrc'
+alias reload='source ~/.zshrc'
+
+# System Journal
+alias j='journalctl -xe'
+alias j-err='journalctl -p 3 -b'
+alias j-f='journalctl -f'
+
+# Packages
+alias p='paru'
+alias p-def='p -Qe'
+alias p-aur='p -Qm'
+alias p-find="paru -Slq | fzf --multi --preview 'paru -Sii {1}' --preview-window=down:75% | xargs -ro paru -S"
+
+# Tools
+n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }

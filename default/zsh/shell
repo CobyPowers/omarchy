@@ -1,0 +1,44 @@
+ZSH=~/.local/share/omarchy/default/zsh/ohmyzsh
+ZSH_CUSTOM=~/.local/share/omarchy/default/zsh
+ZSH_THEME='robbyrussell'
+
+if [[ "$ZSH_THEME" == 'powerlevel10k/powerlevel10k' ]]; then
+  if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+  fi
+
+  source $ZSH_CONFIG_PATH/p10k
+fi
+
+plugins=(
+  git \
+  docker \
+  docker-compose \
+  extract \
+  universalarchive \
+  web-search \
+  colored-man-pages \
+  zsh-autosuggestions
+)
+
+zstyle ':omz:update' mod auto
+zstyle ':omz:update' frequency 7
+zstyle ':omz:update' verbosity silent
+
+ZSH_AUTOSUGGEST_MANUAL_REBIND=true
+COMPLETION_WAITING_DOTS=true
+ENABLE_CORRECTION=true
+#HIST_STAMPS="mm/dd/yyyy"
+
+# Create a place to store user-specific scripts
+if [ -d ~/.zsh-scripts ]; then
+  for sh in ~/.zsh-scripts/*.sh; do
+    source "$sh"
+  done
+else
+  mkdir ~/.zsh-scripts
+fi
+
+source $ZSH/oh-my-zsh.sh
+
+function omz_urlencode() {} # speeds up prompt

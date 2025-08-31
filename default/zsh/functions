@@ -1,0 +1,48 @@
+# Opens file or URL in its preferred application
+open() {
+  xdg-open "$@" >/dev/null 2>&1 &
+}
+
+# Copy file contents into clipboard
+copy() {
+ xclip -sel c < "$@"
+}
+
+# Output the contents of all files in the current directory
+here() {
+  grep -r "$@" .
+}
+
+# Write iso file to sd card
+iso2sd() {
+  if [ $# -ne 2 ]; then
+    echo "Usage: iso2sd <input_file> <output_device>"
+    echo "Example: iso2sd ~/Downloads/ubuntu-25.04-desktop-amd64.iso /dev/sda"
+    echo -e "\nAvailable SD cards:"
+    lsblk -d -o NAME | grep -E '^sd[a-z]' | awk '{print "/dev/"$1}'
+  else
+    sudo dd bs=4M status=progress oflag=sync if="$1" of="$2"
+    sudo eject $2
+  fi
+}
+
+# Format an entire drive for a single partition using ext4
+format-drive() {
+  if [ $# -ne 2 ]; then
+    echo "Usage: format-drive <device> <name>"
+    echo "Example: format-drive /dev/sda 'My Stuff'"
+    echo -e "\nAvailable drives:"
+    lsblk -d -o NAME -n | awk '{print "/dev/"$1}'
+  else
+    echo "WARNING: This will completely erase all data on $1 and label it '$2'."
+    read -rp "Are you sure you want to continue? (y/N): " confirm
+    if [[ "$confirm" =~ ^[Yy]$ ]]; then
+      sudo wipefs -a "$1"
+      sudo dd if=/dev/zero of="$1" bs=1M count=100 status=progress
+      sudo parted -s "$1" mklabel gpt
+      sudo parted -s "$1" mkpart primary ext4 1MiB 100%
+      sudo mkfs.ext4 -L "$2" "$([[ $1 == *"nvme"* ]] && echo "${1}p1" || echo "${1}1")"
+      echo "Drive $1 formatted and labeled '$2'."
+    fi
+  fi
+}

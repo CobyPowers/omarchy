@@ -1,0 +1,7 @@
+ZSH_CONFIG_PATH=~/.local/share/omarchy/default/zsh
+
+source $ZSH_CONFIG_PATH/shell
+source $ZSH_CONFIG_PATH/envs
+source $ZSH_CONFIG_PATH/aliases
+source $ZSH_CONFIG_PATH/functions
+source $ZSH_CONFIG_PATH/init
