@@ -30,6 +30,8 @@ COMPLETION_WAITING_DOTS=true
 ENABLE_CORRECTION=true
 #HIST_STAMPS="mm/dd/yyyy"
 
+setopt null_glob
+
 # Create a place to store user-specific scripts
 if [ -d ~/.zsh-scripts ]; then
   for sh in ~/.zsh-scripts/*.sh; do
@@ -39,6 +41,6 @@ else
   mkdir ~/.zsh-scripts
 fi
 
-source $ZSH/oh-my-zsh.sh
+precmd() { echo }
 
-function omz_urlencode() {} # speeds up prompt
+source $ZSH/oh-my-zsh.sh
