@@ -17,8 +17,7 @@ fi
 # Shell
 alias q='exit'
 alias c='clear'
-alias r='source ~/.zshrc'
-alias reload='source ~/.zshrc'
+alias r='omz reload'
 
 # System Journal
 alias j='journalctl -xe'
@@ -26,14 +25,9 @@ alias j-err='journalctl -p 3 -b'
 alias j-f='journalctl -f'
 
 # Packages
-alias paru='yay'
-alias p='paru'
-alias p-def='p -Qe'
-alias p-aur='p -Qm'
-alias p-find="paru -Slq | fzf --multi --preview 'paru -Sii {1}' --preview-window=down:75% | xargs -ro paru -S"
-
-# Vim
-alias vim='nvim'
+alias p-def='pacman -Qe'
+alias p-aur='pacman -Qm'
+alias p-find="pacman -Slq | fzf --multi --preview 'pacman -Sii {1}' --preview-window=down:75% | xargs -ro paru -S"
 
 # Tools
 n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
