@@ -41,6 +41,4 @@ else
   mkdir ~/.zsh-scripts
 fi
 
-precmd() { echo }
-
 source $ZSH/oh-my-zsh.sh
