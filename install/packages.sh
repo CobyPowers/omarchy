@@ -1,18 +1,19 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm --needed \
-  1password-beta \
-  1password-cli \
-  asdcontrol-git \
   alacritty \
+  asdcontrol-git \
   avahi \
   bash-completion \
   bat \
+  beeper-v4-bin \
   blueberry \
   brightnessctl \
   btop \
   cargo \
+  cava \
   clang \
+  cmatrix \
   cups \
   cups-browsed \
   cups-filters \
@@ -68,6 +69,7 @@ sudo pacman -S --noconfirm --needed \
   mise \
   mpv \
   nautilus \
+  ncspot \
   noto-fonts \
   noto-fonts-cjk \
   noto-fonts-emoji \
@@ -91,9 +93,7 @@ sudo pacman -S --noconfirm --needed \
   qt5-wayland \
   ripgrep \
   satty \
-  signal-desktop \
   slurp \
-  spotify \
   starship \
   sushi \
   swaybg \
@@ -108,6 +108,7 @@ sudo pacman -S --noconfirm --needed \
   tzupdate \
   ufw \
   ufw-docker \
+  unrar \
   unzip \
   uwsm \
   walker-bin \
