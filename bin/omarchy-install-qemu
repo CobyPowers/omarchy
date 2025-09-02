@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! LC_ALL=C lscpu | grep -q Virtualization; then
-  echo "You must enable CPU virtualization to install and run virtual machines"
+  echo "You must enable CPU virtualization to install QEMU"
   exit 1
 fi
 
@@ -10,4 +10,5 @@ sudo pacman -S --needed --noconfirm qemu libvirt iptables-nft dnsmasq virt-manag
 echo -e "\nEnabling and starting libvirtd service..."
 sudo systemctl enable --now libvirtd
 
+sudo -e "\nAdding libvirt group to user '$USER'"
 sudo usermod -aG libvirt $USER
