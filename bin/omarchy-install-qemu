@@ -10,5 +10,5 @@ sudo pacman -S --needed --noconfirm qemu libvirt iptables-nft dnsmasq virt-manag
 echo -e "\nEnabling and starting libvirtd service..."
 sudo systemctl enable --now libvirtd
 
-sudo -e "\nAdding libvirt group to user '$USER'"
+echo -e "\nAdding libvirt group to user '$USER'..."
 sudo usermod -aG libvirt $USER
