@@ -81,14 +81,6 @@ show_learn_menu() {
   esac
 }
 
-show_resources_menu() {
-  case $(menu "Resources" "Themes\nNerd Font Icons") in
-  *Themes*) omarchy-launch-webapp "https://omarchythemes.com" ;;
-  *Icons*) omarchy-launch-webapp "https://www.nerdfonts.com/cheat-sheet" ;;
-  *) show_main_menu ;;
-  esac
-}
-
 show_style_menu() {
   case $(menu "Style" "󰸌  Theme\n  Font\n󰇀  Cursor\n  Background\n󱄄  Screensaver\n  About") in
   *Theme*) show_theme_menu ;;
@@ -427,14 +419,13 @@ show_system_menu() {
 }
 
 show_main_menu() {
-  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Resources\n  Capture\n󰔎  Toggle\n  Style\n  Setup\n󰉉  Install\n󰭌  Remove\n  Update\n  About\n  System")"
+  go_to_menu "$(menu "Go" "󰀻  Apps\n󰧑  Learn\n  Capture\n󰔎  Toggle\n  Style\n  Setup\n󰉉  Install\n󰭌  Remove\n  Update\n  About\n  System")"
 }
 
 go_to_menu() {
   case "${1,,}" in
   *apps*) walker -p "Launch…" ;;
   *learn*) show_learn_menu ;;
-  *resources*) show_resources_menu ;;
   *style*) show_style_menu ;;
   *theme*) show_theme_menu ;;
   *capture*) show_capture_menu ;;
