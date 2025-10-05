@@ -1,6 +1,7 @@
 ZSH=~/.local/share/omarchy/default/zsh/ohmyzsh
 ZSH_CUSTOM=~/.local/share/omarchy/default/zsh
-ZSH_THEME='robbyrussell'
+#ZSH_THEME='robbyrussell'
+ZSH_THEME="dstufft"
 
 if [[ "$ZSH_THEME" == 'powerlevel10k/powerlevel10k' ]]; then
   if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
