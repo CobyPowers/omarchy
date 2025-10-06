@@ -1,6 +1,7 @@
 # Omarchy core package list installed via install/packages.sh
 # This file is also used by the ISO builder when determining needs
 
+7zip
 alacritty
 asdcontrol-git
 avahi
@@ -17,6 +18,7 @@ cups
 cups-browsed
 cups-filters
 cups-pdf
+discord
 docker
 docker-buildx
 docker-compose
@@ -100,6 +102,7 @@ sushi
 swaybg
 swayosd
 system-config-printer
+tinyxxd
 tldr
 tree-sitter-cli
 ttf-cascadia-mono-nerd
@@ -115,7 +118,9 @@ uwsm
 walker-bin
 waybar
 wf-recorder
+wget
 whois
+wireguard-tools
 wireless-regdb
 wiremix
 wireplumber
@@ -123,6 +128,7 @@ wl-clip-persist
 wl-clipboard
 wl-screenrec
 woff2-font-awesome
+xclip
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xmlstarlet
