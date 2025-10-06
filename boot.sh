@@ -32,6 +32,7 @@ if [[ $OMARCHY_REF != "master" ]]; then
   echo -e "\e[32mUsing branch: $OMARCHY_REF\e[0m"
   cd ~/.local/share/omarchy
   git fetch origin "${OMARCHY_REF}" && git checkout "${OMARCHY_REF}"
+  git submodule update --init --recursive
   cd -
 fi
 
