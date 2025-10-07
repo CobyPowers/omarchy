@@ -11,8 +11,8 @@ offset = { y = 3 }
 size = 11
 
 [window]
-padding.x = 8
-padding.y = 8
+padding.x = 16
+padding.y = 16
 decorations = "None"
 
 [keyboard]
