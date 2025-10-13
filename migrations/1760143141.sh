@@ -1,3 +1,3 @@
 echo "Remove ncspot"
 
-sudo pacman -Rns ncspot
+sudo pacman -Rns --noconfirm ncspot
