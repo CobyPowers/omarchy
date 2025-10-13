@@ -18,6 +18,13 @@
   margin-right: 8px;
 }
 
+.modules-center {
+  border-radius: 0;
+  border-left: 1px solid alpha(@foreground, 0.2);
+  border-right: 1px solid alpha(@foreground, 0.2);
+  padding: 0 80px;
+}
+
 #workspaces button {
   all: initial;
   padding: 0 6px;
@@ -31,6 +38,7 @@
 
 #tray,
 #cpu,
+#memory,
 #battery,
 #network,
 #bluetooth,
