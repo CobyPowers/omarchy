@@ -44,11 +44,16 @@
 #network,
 #bluetooth,
 #pulseaudio,
+#mpris,
 #custom-omarchy,
 #custom-screenrecording-indicator,
 #custom-update {
   min-width: 12px;
   margin: 0 7.5px;
+}
+
+#custom-omarchy {
+  font-size: 14px;
 }
 
 #custom-expand-icon {
@@ -68,7 +73,7 @@ tooltip {
 }
 
 #temperature.critical {
-  color: mix(@foreground, #FF0000, 0.4);
+  color: mix(@foreground, #FF0000, 0.6);
 }
 
 .hidden {
