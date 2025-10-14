@@ -39,6 +39,7 @@
 #tray,
 #cpu,
 #memory,
+#temperature,
 #battery,
 #network,
 #bluetooth,
@@ -64,6 +65,10 @@ tooltip {
 
 #clock {
   margin-left: 8.75px;
+}
+
+#temperature.critical {
+  color: mix(@foreground, #FF0000, 0.4);
 }
 
 .hidden {

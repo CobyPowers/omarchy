@@ -15,6 +15,7 @@
     "pulseaudio",
     "cpu",
     "memory",
+    "temperature",
     "battery"
   ],
   "hyprland/workspaces": {
@@ -62,6 +63,13 @@
   "memory": {
     "interval": 2,
     "format": "  {percentage}%",
+    "on-click": "$TERMINAL -e btop"
+  },
+  "temperature": {
+    "interval": 2,
+    "critical-threshold": 85,
+    "format": " {temperatureC}°C",
+    "format-critical": " {temperatureC}°C"
   },
   "clock": {
     "format": "{:L%I:%M %p}",
@@ -71,8 +79,8 @@
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-    "format": "{icon}",
-    "format-wifi": "{icon}",
+    "format": "{icon} ",
+    "format-wifi": "{icon} ",
     "format-ethernet": "󰀂",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -104,7 +112,7 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
-    "format-connected": "",
+    "format-connected": "󰂱",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "blueberry"
   },
