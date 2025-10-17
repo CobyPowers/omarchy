@@ -14,15 +14,15 @@
   margin-left: 8px;
 }
 
-.modules-right {
-  margin-right: 8px;
-}
-
 .modules-center {
   border-radius: 0;
   border-left: 1px solid alpha(@foreground, 0.2);
   border-right: 1px solid alpha(@foreground, 0.2);
   padding: 0 80px;
+}
+
+.modules-right {
+  margin-right: 8px;
 }
 
 #workspaces button {
@@ -36,6 +36,11 @@
   opacity: 0.5;
 }
 
+#window {
+  padding-left: 8px;
+  padding-right: 64px;
+}
+
 #tray,
 #cpu,
 #memory,
@@ -45,15 +50,12 @@
 #bluetooth,
 #pulseaudio,
 #mpris,
+#window,
 #custom-omarchy,
 #custom-screenrecording-indicator,
 #custom-update {
   min-width: 12px;
   margin: 0 7.5px;
-}
-
-#custom-omarchy {
-  font-size: 14px;
 }
 
 #custom-expand-icon {
