@@ -5,7 +5,7 @@
   color: @foreground;
 
   border: none;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   font-family: 'JetBrainsMono Nerd Font';
   font-size: 12px;
 }
@@ -46,6 +46,8 @@
 #memory,
 #temperature,
 #battery,
+#network,
+#bluetooth,
 #pulseaudio,
 #mpris,
 #window,
@@ -56,20 +58,8 @@
   margin: 0 7.5px;
 }
 
-#tray {
-  margin-right: 16px;
-}
-
-#bluetooth {
-  margin-right: 17px;
-}
-
-#network {
-  margin-right: 13px;
-}
-
 #custom-expand-icon {
-  margin-right: 20px;
+  margin-right: 7px;
 }
 
 tooltip {
@@ -82,6 +72,22 @@ tooltip {
 
 #clock {
   margin-left: 8.75px;
+}
+
+#cpu.warning {
+  color: mix(@foreground, #FFFF00, 0.6);
+}
+
+#cpu.critical {
+  color: mix(@foreground, #FF0000, 0.6);
+}
+
+#memory.warning {
+  color: mix(@foreground, #FFFF00, 0.6);
+}
+
+#memory.critical {
+  color: mix(@foreground, #FF0000, 0.6);
 }
 
 #temperature.critical {
