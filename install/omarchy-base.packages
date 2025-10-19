@@ -1,12 +1,14 @@
-# Omarchy core package list installed via install/packages.sh
+# Omarchy core package list installed via install/packaging/base.sh
 # This file is also used by the ISO builder when determining needs
 
 7zip
+aether
 alacritty
-asdcontrol-git
+asdcontrol
 avahi
 bash-completion
 bat
+blueberry
 bluetui
 brightnessctl
 btop
@@ -23,6 +25,19 @@ docker
 docker-buildx
 docker-compose
 dust
+elephant
+elephant-bluetooth
+elephant-calc
+elephant-clipboard
+elephant-desktopapplications
+elephant-files
+elephant-menus
+elephant-providerlist
+elephant-runner
+elephant-symbols
+elephant-todo
+elephant-unicode
+elephant-websearch
 evince
 eza
 fastfetch
@@ -37,15 +52,17 @@ github-cli
 gnome-calculator
 gnome-keyring
 gnome-themes-extra
+grim
+gpu-screen-recorder
 gum
 gvfs-mtp
+gvfs-nfs
 gvfs-smb
 hypridle
 hyprland
 hyprland-qtutils
 hyprlock
 hyprpicker
-hyprshot
 hyprsunset
 imagemagick
 impala
@@ -58,6 +75,7 @@ kvantum-qt5
 lazydocker
 lazygit
 less
+libsecret
 libyaml
 libqalculate
 libreoffice
@@ -70,6 +88,7 @@ mariadb-libs
 mise
 mpv
 nautilus
+gnome-disk-utility
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -79,7 +98,7 @@ nvim
 obs-studio
 obsidian
 omarchy-chromium
-omarchy-lazyvim
+omarchy-nvim
 pamixer
 pinta
 playerctl
@@ -94,6 +113,7 @@ python-terminaltexteffects
 qt5-wayland
 ripgrep
 satty
+sddm
 slurp
 starship
 sushi
@@ -114,18 +134,16 @@ ufw-docker
 unrar
 unzip
 uwsm
-walker-bin
+walker
 waybar
-wf-recorder
+wayfreeze-git
 wget
 whois
 wireguard-tools
 wireless-regdb
 wiremix
 wireplumber
-wl-clip-persist
 wl-clipboard
-wl-screenrec
 woff2-font-awesome
 xclip
 xdg-desktop-portal-gtk

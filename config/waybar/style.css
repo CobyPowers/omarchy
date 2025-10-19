@@ -46,8 +46,6 @@
 #memory,
 #temperature,
 #battery,
-#network,
-#bluetooth,
 #pulseaudio,
 #mpris,
 #window,
@@ -58,8 +56,20 @@
   margin: 0 7.5px;
 }
 
+#tray {
+  margin-right: 16px;
+}
+
+#bluetooth {
+  margin-right: 17px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
 #custom-expand-icon {
-  margin-right: 7px;
+  margin-right: 20px;
 }
 
 tooltip {
