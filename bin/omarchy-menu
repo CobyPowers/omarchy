@@ -173,9 +173,9 @@ show_font_menu() {
 }
 
 show_cursor_menu() {
-  theme=$(menu "Cursor" "$(omarchy-cursor-list)" "-w 350" "$(omarchy-cursor-current)")
+  theme=$(menu "Cursor" "$(omarchy-cursor-list)" "--width 350" "$(omarchy-cursor-current)")
   if [[ "$theme" == "CNCLD" || -z "$theme" ]]; then
-    show_main_menu
+    back_to show_style_menu
   else
     omarchy-cursor-set "$theme"
   fi
