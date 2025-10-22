@@ -47,12 +47,14 @@
     "rewrite": {
       " - ": "", // if no window is focused, a single dash is displayed, this removes it
       "(.*) - Chromium - chromium": "  $1",
+      "(.*) — Firefox Developer Edition - firefox-developer-edition": "  $1",
       "(.*) - Discord - discord": "󰻞  $1",
       "(.*) - Obsidian - .* - obsidian": "  $1",
       "(.*) - com.mitchellh.ghostty": "  $1",
       "(.*) - Alacritty": "  $1",
       "(.*) - BeeperTexts": "󰻞  $1",
       "(.*) - org.gnome.Nautilus": "  $1",
+      "(.*) - org.gnome.Calculator": "󰃬 $1",
       // "OBS *. - (.*) - com.obsproject.Studio": "  $1", // not yet functional
       // "nvim (.*) - com.mitchellh.ghostty": "  $1", // not being captured
     }
