@@ -12,7 +12,7 @@ xdg-mime default imv.desktop image/tiff
 # Open PDFs with the Document Viewer
 xdg-mime default org.gnome.Evince.desktop application/pdf
 
-# Use Chromium as the default browser
+# Use Firefox Developer Edition as the default browser
 xdg-settings set default-web-browser firefox-developer-edition.desktop
 xdg-mime default firefox-developer-edition.desktop x-scheme-handler/http
 xdg-mime default firefox-developer-edition.desktop x-scheme-handler/https
