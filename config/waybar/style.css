@@ -5,8 +5,8 @@
   color: @foreground;
 
   border: none;
-  border-radius: 0;
-  font-family: 'JetBrainsMono Nerd Font';
+  border-radius: 0px 0 8px 8px;
+  font-family: 'Victor Mono';
   font-size: 12px;
 }
 
@@ -18,7 +18,7 @@
   border-radius: 0;
   border-left: 1px solid alpha(@foreground, 0.2);
   border-right: 1px solid alpha(@foreground, 0.2);
-  padding: 0 80px;
+  padding: 0 60px;
 }
 
 .modules-right {
@@ -38,7 +38,7 @@
 
 #window {
   padding-left: 8px;
-  padding-right: 64px;
+  padding-right: 32px;
 }
 
 #tray,
@@ -53,7 +53,8 @@
 #window,
 #custom-omarchy,
 #custom-screenrecording-indicator,
-#custom-update {
+#custom-update,
+#custom-vpn {
   min-width: 12px;
   margin: 0 7.5px;
 }
