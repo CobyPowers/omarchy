@@ -1,8 +1,8 @@
 ZSH=~/.local/share/omarchy/default/zsh/ohmyzsh
 ZSH_CUSTOM=~/.local/share/omarchy/default/zsh
 #ZSH_THEME='robbyrussell'
-# ZSH_THEME="bira"
-# ZSH_THEME="mortalscumbag"
+#ZSH_THEME="bira"
+#ZSH_THEME="mortalscumbag"
 ZSH_THEME="suvash"
 
 if [[ "$ZSH_THEME" == 'powerlevel10k/powerlevel10k' ]]; then
@@ -21,7 +21,8 @@ plugins=(
   universalarchive \
   web-search \
   colored-man-pages \
-  zsh-autosuggestions
+  zsh-autosuggestions \
+  vi-mode
 )
 
 zstyle ':omz:update' mod auto
