@@ -3,11 +3,13 @@
 
 7zip
 aether
+alacritty
 asdcontrol
 avahi
 bash-completion
 bat
 bluetui
+bolt
 brightnessctl
 btop
 cargo
@@ -50,6 +52,7 @@ gvfs-smb
 hypridle
 hyprland
 hyprland-guiutils
+hyprland-preview-share-picker
 hyprlock
 hyprpicker
 hyprsunset
