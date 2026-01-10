@@ -8,6 +8,8 @@ asdcontrol
 avahi
 bash-completion
 bat
+bibata-cursor-theme-bin
+bind
 bluetui
 bolt
 brightnessctl
@@ -36,6 +38,7 @@ fcitx5-qt
 fd
 ffmpegthumbnailer
 firefox-developer-edition
+flatpak
 fontconfig
 fzf
 ghostty
@@ -80,7 +83,7 @@ mariadb-libs
 mise
 mpv
 nautilus
-gnome-disk-utility
+nmap
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -113,8 +116,11 @@ starship
 sushi
 swaybg
 swayosd
+syncthing
 system-config-printer
+tailscale
 tinyxxd
+tmux
 tree-sitter-cli
 ttf-cascadia-mono-nerd
 ttf-ia-writer
@@ -127,6 +133,7 @@ unrar
 unzip
 usage
 uwsm
+viu
 waybar
 wayfreeze
 wget
@@ -138,6 +145,7 @@ wireplumber
 wl-clipboard
 woff2-font-awesome
 xclip
+xcursor-dmz
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-terminal-exec
