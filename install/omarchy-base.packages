@@ -103,6 +103,7 @@ plymouth
 polkit-gnome
 postgresql-libs
 power-profiles-daemon
+proton-vpn-cli
 python-gobject
 python-poetry-core
 python-terminaltexteffects
