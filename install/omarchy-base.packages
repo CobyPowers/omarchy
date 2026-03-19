@@ -2,8 +2,8 @@
 # This file is also used by the ISO builder when determining needs
 
 7zip
-aether
 alacritty
+alsa-utils
 asdcontrol
 avahi
 bash-completion
@@ -37,11 +37,9 @@ fcitx5-gtk
 fcitx5-qt
 fd
 ffmpegthumbnailer
-firefox-developer-edition
 flatpak
 fontconfig
 fzf
-ghostty
 github-cli
 gnome-calculator
 gnome-keyring
@@ -67,6 +65,7 @@ inxi
 iwd
 jq
 kdenlive
+kernel-modules-hook
 kvantum-qt5
 lazydocker
 lazygit
@@ -84,15 +83,15 @@ mise
 mpv
 nautilus
 nmap
+nautilus-python
+gnome-disk-utility
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-noto-fonts-extra
 nss-mdns
 nvim
 obs-studio
 obsidian
-omarchy-chromium
 omarchy-nvim
 omarchy-walker
 pamixer
@@ -103,7 +102,6 @@ plymouth
 polkit-gnome
 postgresql-libs
 power-profiles-daemon
-proton-vpn-cli
 python-gobject
 python-poetry-core
 python-terminaltexteffects
@@ -124,7 +122,8 @@ tailscale
 tinyxxd
 tmux
 tree-sitter-cli
-ttf-cascadia-mono-nerd
+tmux
+tobi-try
 ttf-ia-writer
 ttf-jetbrains-mono-nerd
 typora
@@ -135,9 +134,7 @@ unrar
 unzip
 usage
 uwsm
-viu
 waybar
-wayfreeze
 wget
 whois
 wireguard-tools
@@ -155,6 +152,5 @@ xmlstarlet
 xournalpp
 yaru-icon-theme
 yay
-yq
 zoxide
 zsh
