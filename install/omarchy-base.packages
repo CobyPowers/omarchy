@@ -18,6 +18,7 @@ cargo
 cava
 clang
 cmatrix
+cliamp
 cups
 cups-browsed
 cups-filters
@@ -122,6 +123,8 @@ system-config-printer
 tailscale
 tinyxxd
 tmux
+tesseract
+tesseract-data-eng
 tree-sitter-cli
 tmux
 tobi-try

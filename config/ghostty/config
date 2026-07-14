@@ -10,7 +10,7 @@ adjust-cell-height = 2
 # Window
 window-padding-x = 12
 window-padding-y = 12
-confirm-close-surface=false
+confirm-close-surface = false
 resize-overlay = never
 
 # Cursor styling
@@ -25,8 +25,8 @@ shell-integration-features = no-cursor,ssh-env
 keybind = f11=toggle_fullscreen
 keybind = shift+insert=paste_from_clipboard
 keybind = control+insert=copy_to_clipboard
-
-# Controls for windows splits
+keybind = shift+enter=csi:13;2u
+keybind = alt+shift+enter=csi:13;4u
 keybind = super+control+shift+alt+arrow_down=resize_split:down,100
 keybind = super+control+shift+alt+arrow_up=resize_split:up,100
 keybind = super+control+shift+alt+arrow_left=resize_split:left,100
